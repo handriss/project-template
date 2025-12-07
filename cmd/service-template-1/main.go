@@ -33,11 +33,11 @@ func main() {
 
 	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/plain; charset=utf-8")
-		w.Write([]byte("Welcome to the go-chi server 👋"))
+		w.Write([]byte("Service Template 1 - Ready for customization 🚀"))
 	})
 
 	addr := ":8080"
-	println("Server listening on", addr)
+	println("Service Template 1 listening on", addr)
 	if err := http.ListenAndServe(addr, r); err != nil {
 		panic(err)
 	}
